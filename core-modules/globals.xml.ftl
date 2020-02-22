@@ -18,6 +18,9 @@
     <#assign coreStateApplierInterfacesModuleName="core-state-applier-interfaces" />
     <#assign coreUserInteractionsModuleName="core-user-interactions-interfaces" />
 
+# Global values
+    <global id="gradleSettingsSrcTo" value="." />
+
 # Module names
     <global id="coreDataObserverImplementationsModuleName" value="${coreDataObserverImplementationsModuleName}" />
     <global id="coreDataObserverInterfacesModuleName" value="${coreDataObserverInterfacesModuleName}" />
