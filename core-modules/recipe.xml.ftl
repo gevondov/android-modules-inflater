@@ -3,56 +3,68 @@
 <recipe>
     <@kt.addAllKotlinDependencies />
 
+# Data observer
     <instantiate
-      from="core-data-observer-implementations/src/DataObserverImpl.kt.ftl"
-      to="core-data-observer-implementations/src/main/java/${slashedPackageName(packageName)}/core/data/observer/implementations/DataObserverImpl.kt" />
+      from="${coreDataObserverImplementationsSrcFrom}/DataObserverImpl.kt.ftl"
+      to="${coreDataObserverImplementationsSrcTo}/DataObserverImpl.kt" />
 
     <instantiate
-      from="core-data-observer-interfaces/src/DataObserver.kt.ftl"
-      to="core-data-observer-interfaces/src/main/java/${slashedPackageName(packageName)}/core/data/observer/interfaces/DataObserver.kt" />
+      from="${coreDataObserverInterfacesSrcFrom}/DataObserver.kt.ftl"
+      to="${coreDataObserverInterfacesSrcTo}/DataObserver.kt" />
+
+# Feature view
+    <instantiate
+      from="${coreFeatureViewImplementationsSrcFrom}/FeatureViewImpl.kt.ftl"
+      to="${coreFeatureViewImplementationsSrcTo}/FeatureViewImpl.kt" />
 
     <instantiate
-      from="core-feature-view-implementations/src/FeatureViewImpl.kt.ftl"
-      to="core-feature-view-implementations/src/main/java/${slashedPackageName(packageName)}/core/feature/view/implementations/FeatureViewImpl.kt" />
+      from="${coreFeatureViewInterfacesSrcFrom}/FeatureView.kt.ftl"
+      to="${coreFeatureViewInterfacesSrcTo}/FeatureView.kt" />
+
+# Model
+    <instantiate
+      from="${coreModelInterfacesSrcFrom}/Model.kt.ftl"
+      to="${coreModelInterfacesSrcTo}/Model.kt" />
+
+# Presenter
+    <instantiate
+      from="${corePresenterImplementationsSrcFrom}/PresenterImpl.kt.ftl"
+      to="${corePresenterImplementationsSrcTo}/PresenterImpl.kt" />
 
     <instantiate
-      from="core-feature-view-interfaces/src/FeatureView.kt.ftl"
-      to="core-feature-view-interfaces/src/main/java/${slashedPackageName(packageName)}/core/feature/view/interfaces/FeatureView.kt" />
+      from="${corePresenterInterfacesSrcFrom}/Presenter.kt.ftl"
+      to="${corePresenterInterfacesSrcTo}/Presenter.kt" />
+
+# Screen
+    <instantiate
+      from="${coreScreenSrcFrom}/Screen.kt.ftl"
+      to="${coreScreenSrcTo}/Screen.kt" />
 
     <instantiate
-      from="core-model-interfaces/src/Model.kt.ftl"
-      to="core-model-interfaces/src/main/java/${slashedPackageName(packageName)}/core/model/interfaces.Model.kt" />
+      from="${coreScreenSrcFrom}/ScreenView.kt.ftl"
+      to="${coreScreenSrcTo}/ScreenView.kt" />
+
+# State
+    <instantiate
+      from="${coreStateSrcFrom}/State.kt.ftl"
+      to="${coreStateSrcTo}/State.kt" />
 
     <instantiate
-      from="core-presenter-implementations/src/PresenterImpl.kt.ftl"
-      to="core-presenter-implementations/src/main/java/${slashedPackageName(packageName)}/core/presenter/implementations/PresenterImpl.kt" />
+      from="${coreStateSrcFrom}/Field.kt.ftl"
+      to="${coreStateSrcTo}/Field.kt" />
+
+# State applier
+    <instantiate
+      from="${coreStateApplierImplementationsSrcFrom}/StateApplierImpl.kt.ftl"
+      to="${coreStateApplierImplementationsSrcTo}/StateApplierImpl.kt" />
 
     <instantiate
-      from="core-screen/src/Screen.kt.ftl"
-      to="core-screen/src/main/java/${slashedPackageName(packageName)}/core/screen/Screen.kt" />
+      from="${coreStateApplierInterfacesSrcFrom}/StateApplier.kt.ftl"
+      to="${coreStateApplierInterfacesSrcTo}/StateApplier.kt" />
 
+# User interactions
     <instantiate
-      from="core-screen/src/ScreenView.kt.ftl"
-      to="core-screen/src/main/java/${slashedPackageName(packageName)}/core/screen/ScreenView.kt" />
-
-    <instantiate
-      from="core-state/src/Field.kt.ftl"
-      to="core-state/src/main/java/${slashedPackageName(packageName)}/core/state/Field.kt" />
-
-    <instantiate
-      from="core-state/src/State.kt.ftl"
-      to="core-state/src/main/java/${slashedPackageName(packageName)}/core/state/State.kt" />
-
-    <instantiate
-      from="core-state-applier-implementations/src/StateApplierImpl.kt.ftl"
-      to="core-state-applier-implementations/src/main/java/${slashedPackageName(packageName)}/core/state/applier/implementations/StateApplierImpl.kt" />
-
-    <instantiate
-      from="core-state-applier-interfaces/src/StateApplier.kt.ftl"
-      to="core-state-applier-interfaces/src/main/java/${slashedPackageName(packageName)}/core/state/applier/interfaces/StateApplier.kt" />
-
-    <instantiate
-      from="core-user-interactions-interfaces/src/UserInteractions.kt.ftl"
-      to="core-user-interactions-interfaces/src/main/java/${slashedPackageName(packageName)}/core/state/interactions/interfaces/UserInteractions.kt" />
+      from="${coreUserInteractionsSrcFrom}/UserInteractions.kt.ftl"
+      to="${coreUserInteractionsSrcTo}/UserInteractions.kt" />
 
 </recipe>
