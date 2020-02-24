@@ -63,4 +63,18 @@
     <global id="coreStateApplierInterfacesSrcTo" value="${coreStateApplierInterfacesModuleName}/${srcTo}/core/state/applier/interfaces" />
     <global id="coreUserInteractionsSrcTo" value="${coreUserInteractionsModuleName}/${srcTo}/core/state/interactions/interfaces" />
 
+# Build gradle src out
+    <global id="coreDataObserverImplementationsGradleSrcTo" value="${coreDataObserverImplementationsModuleName}" />
+    <global id="coreDataObserverInterfacesGradleSrcTo" value="${coreDataObserverInterfacesModuleName}" />
+    <global id="coreFeatureViewImplementationsGradleSrcTo" value="${coreFeatureViewImplementationsModuleName}" />
+    <global id="coreFeatureViewInterfacesGradleSrcTo" value="${coreFeatureViewInterfacesModuleName}" />
+    <global id="coreModelInterfacesGradleSrcTo" value="${coreModelInterfacesModuleName}" />
+    <global id="corePresenterImplementationsGradleSrcTo" value="${corePresenterImplementationsModuleName}" />
+    <global id="corePresenterInterfacesGradleSrcTo" value="${corePresenterInterfacesModuleName}" />
+    <global id="coreScreenGradleSrcTo" value="${coreScreenModuleName}" />
+    <global id="coreStateGradleSrcTo" value="${coreStateModuleName}" />
+    <global id="coreStateApplierImplementationsGradleSrcTo" value="${coreStateApplierImplementationsModuleName}" />
+    <global id="coreStateApplierInterfacesGradleSrcTo" value="${coreStateApplierInterfacesModuleName}" />
+    <global id="coreUserInteractionsGradleSrcTo" value="${coreUserInteractionsModuleName}" />
+
 </globals>
