@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<template
+    format="4"
+    revision="1"
+    name="feature-modules"
+    description="Creates feature modules">
+
+    <parameter
+      id="featureName"
+      name="Feature name"
+      type="string"
+      constraints="nonempty|unique"
+      default="Example"/>
+
+    <globals file="globals.xml.ftl" />
+    <execute file="recipe.xml.ftl" />
+
+</template>

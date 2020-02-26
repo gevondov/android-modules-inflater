@@ -1,4 +1,3 @@
-<?xml version="1.0"?>
 <globals>
     <#include "root://activities/common/common_globals.xml.ftl" />
 
@@ -6,18 +5,31 @@
     <#assign srcTo="src/main/java/${slashedPackageName(packageName)}" />
     <#assign escapedPackageName="${escapeKotlinIdentifiers(packageName)}" />
 
-    <#assign coreDataObserverImplementationsModuleName="core-data-observer-implementations" />
-    <#assign coreDataObserverInterfacesModuleName="core-data-observer-interfaces" />
-    <#assign coreFeatureViewImplementationsModuleName="core-feature-view-implementations" />
-    <#assign coreFeatureViewInterfacesModuleName="core-feature-view-interfaces" />
-    <#assign coreModelInterfacesModuleName="core-model-interfaces" />
-    <#assign corePresenterImplementationsModuleName="core-presenter-implementations" />
-    <#assign corePresenterInterfacesModuleName="core-presenter-interfaces" />
-    <#assign coreScreenModuleName="core-screen" />
-    <#assign coreStateModuleName="core-state" />
-    <#assign coreStateApplierImplementationsModuleName="core-state-applier-implementations" />
-    <#assign coreStateApplierInterfacesModuleName="core-state-applier-interfaces" />
-    <#assign coreUserInteractionsModuleName="core-user-interactions-interfaces" />
+    <#assign dataObserverImplementationsSufix="data-observer-implementations" />
+    <#assign dataObserverInterfacesSufix="data-observer-interfaces" />
+    <#assign featureViewImplementationsSufix="feature-view-implementations" />
+    <#assign featureViewInterfacesSufix="feature-view-interfaces" />
+    <#assign modelInterfacesSufix="model-interfaces" />
+    <#assign presenterImplementationsSufix="presenter-implementations" />
+    <#assign presenterInterfacesSufix="presenter-interfaces" />
+    <#assign screenSufix="screen" />
+    <#assign stateSufix="state" />
+    <#assign stateApplierImplementationsSufix="state-applier-implementations" />
+    <#assign stateApplierInterfacesSufix="state-applier-interfaces" />
+    <#assign userInteractionsSufix="user-interactions-interfaces" />
+
+    <#assign coreDataObserverImplementationsModuleName="core-${dataObserverImplementationsSufix}" />
+    <#assign coreDataObserverInterfacesModuleName="core-${dataObserverInterfacesSufix}" />
+    <#assign coreFeatureViewImplementationsModuleName="core-${featureViewImplementationsSufix}" />
+    <#assign coreFeatureViewInterfacesModuleName="core-${featureViewInterfacesSufix}" />
+    <#assign coreModelInterfacesModuleName="core-${modelInterfacesSufix}" />
+    <#assign corePresenterImplementationsModuleName="core-${presenterImplementationsSufix}" />
+    <#assign corePresenterInterfacesModuleName="core-${presenterInterfacesSufix}" />
+    <#assign coreScreenModuleName="core-${screenSufix}" />
+    <#assign coreStateModuleName="core-${stateSufix}" />
+    <#assign coreStateApplierImplementationsModuleName="core-${stateApplierImplementationsSufix}" />
+    <#assign coreStateApplierInterfacesModuleName="core-${stateApplierInterfacesSufix}" />
+    <#assign coreUserInteractionsModuleName="core-${userInteractionsSufix}" />
 
 # Global values
     <global id="gradleSettingsSrcTo" value="." />

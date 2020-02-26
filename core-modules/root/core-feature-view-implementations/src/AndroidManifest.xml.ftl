@@ -1,1 +1,1 @@
-<manifest package="${escapeKotlinIdentifiers(packageName)}.core.feature.view.implementations" />
+<manifest package="${coreFeatureViewImplementationsPackageName}" />
