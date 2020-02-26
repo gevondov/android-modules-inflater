@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.state
+package ${coreStatePackageName}
 
 class Field

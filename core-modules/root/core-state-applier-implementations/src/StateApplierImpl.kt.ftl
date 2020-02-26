@@ -1,5 +1,5 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.state.applier.implementations
+package ${coreStateApplierImplementationsPackageName}
 
-import ${escapeKotlinIdentifiers(packageName)}.core.state.applier.interfaces.StateApplier
+import ${coreStateApplierInterfacesPackageName}.StateApplier
 
 abstract class StateApplierImpl : StateApplier

@@ -1,5 +1,5 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.data.observer.implementations
+package ${coreDataObserverImplementationsPackageName}
 
-import ${escapeKotlinIdentifiers(packageName)}.core.data.observer.interfaces.DataObserver
+import ${coreDataObserverInterfacesPackageName}.DataObserver
 
 abstract class DataObserverImpl : DataObserver

@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.state.applier.interfaces
+package ${coreStateApplierInterfacesPackageName}
 
 interface StateApplier

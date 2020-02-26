@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.feature.view.interfaces
+package ${coreFeatureViewInterfacesPackageName}
 
 interface FeatureView

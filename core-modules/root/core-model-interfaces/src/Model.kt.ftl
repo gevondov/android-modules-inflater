@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.model.interfaces
+package ${coreModelInterfacesPackageName}
 
 interface Model

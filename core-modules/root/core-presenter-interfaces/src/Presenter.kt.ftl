@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.presenter.interfaces
+package ${corePresenterInterfacesPackageName}
 
 interface Presenter

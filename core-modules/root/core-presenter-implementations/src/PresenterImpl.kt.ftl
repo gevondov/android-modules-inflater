@@ -1,5 +1,5 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.presenter.implementations
+package ${corePresenterImplementationsPackageName}
 
-import ${escapeKotlinIdentifiers(packageName)}.core.presenter.interfaces.Presenter
+import ${corePresenterInterfacesPackageName}.Presenter
 
 abstract class PresenterImpl : Presenter

@@ -4,6 +4,7 @@
 
 # Assigns
     <#assign srcTo="src/main/java/${slashedPackageName(packageName)}" />
+    <#assign escapedPackageName="${escapeKotlinIdentifiers(packageName)}" />
 
     <#assign coreDataObserverImplementationsModuleName="core-data-observer-implementations" />
     <#assign coreDataObserverInterfacesModuleName="core-data-observer-interfaces" />
@@ -34,6 +35,20 @@
     <global id="coreStateApplierImplementationsModuleName" value="${coreStateApplierImplementationsModuleName}" />
     <global id="coreStateApplierInterfacesModuleName" value="${coreStateApplierInterfacesModuleName}" />
     <global id="coreUserInteractionsModuleName" value="${coreUserInteractionsModuleName}" />
+
+# Module package names
+    <global id="coreDataObserverImplementationsPackageName" value="${escapedPackageName}.core.data.observer.implementations" />
+    <global id="coreDataObserverInterfacesPackageName" value="${escapedPackageName}.core.data.observer.interfaces" />
+    <global id="coreFeatureViewImplementationsPackageName" value="${escapedPackageName}.core.feature.view.implementations" />
+    <global id="coreFeatureViewInterfacesPackageName" value="${escapedPackageName}.core.feature.view.interfaces" />
+    <global id="coreModelInterfacesPackageName" value="${escapedPackageName}.core.model.interfaces" />
+    <global id="corePresenterImplementationsPackageName" value="${escapedPackageName}.core.presenter.implementations" />
+    <global id="corePresenterInterfacesPackageName" value="${escapedPackageName}.core.presenter.interfaces" />
+    <global id="coreScreenPackageName" value="${escapedPackageName}.core.screen" />
+    <global id="coreStatePackageName" value="${escapedPackageName}.core.state" />
+    <global id="coreStateApplierImplementationsPackageName" value="${escapedPackageName}.core.state.applier.implementations" />
+    <global id="coreStateApplierInterfacesPackageName" value="${escapedPackageName}.core.state.applier.interfaces" />
+    <global id="coreUserInteractionsPackageName" value="${escapedPackageName}.core.user.interactions.interfaces" />
 
 # Module src from
     <global id="coreDataObserverImplementationsSrcFrom" value="${coreDataObserverImplementationsModuleName}/src" />

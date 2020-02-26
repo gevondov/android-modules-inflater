@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.screen
+package ${coreScreenPackageName}
 
 interface Screen

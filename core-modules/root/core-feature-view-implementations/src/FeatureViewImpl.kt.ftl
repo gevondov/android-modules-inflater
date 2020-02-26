@@ -1,6 +1,6 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.feature.view.implementations
+package ${coreFeatureViewImplementationsPackageName}
 
 import androidx.fragment.app.Fragment
-import ${escapeKotlinIdentifiers(packageName)}.core.feature.view.interfaces.FeatureView
+import ${coreFeatureViewInterfacesPackageName}.FeatureView
 
 abstract class FeatureViewImpl : Fragment(), FeatureView

@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.user.interactions.interfaces
+package ${coreUserInteractionsPackageName}
 
 interface UserInteractions

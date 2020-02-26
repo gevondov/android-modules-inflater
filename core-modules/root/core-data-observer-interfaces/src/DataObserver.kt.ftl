@@ -1,3 +1,3 @@
-package ${escapeKotlinIdentifiers(packageName)}.core.data.observer.interfaces
+package ${coreDataObserverInterfacesPackageName}
 
 interface DataObserver
