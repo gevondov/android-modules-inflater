@@ -77,4 +77,7 @@
     <global id="coreStateApplierInterfacesGradleSrcTo" value="${coreStateApplierInterfacesModuleName}" />
     <global id="coreUserInteractionsGradleSrcTo" value="${coreUserInteractionsModuleName}" />
 
+# AndroidManifest src out
+    <global id="coreFeatureViewImplementationsManifestSrcTo" value="${coreFeatureViewImplementationsModuleName}/src/main" />
+
 </globals>

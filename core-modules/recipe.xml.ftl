@@ -37,6 +37,10 @@
       from="${coreFeatureViewImplementationsSrcFrom}/build.gradle.ftl"
       to="${coreFeatureViewImplementationsGradleSrcTo}/build.gradle" />
 
+    <instantiate
+      from="${coreFeatureViewImplementationsSrcFrom}/AndroidManifest.xml.ftl"
+      to="${coreFeatureViewImplementationsManifestSrcTo}/AndroidManifest.xml" />
+
     <merge
       from="${coreFeatureViewImplementationsSrcFrom}/settings.gradle.ftl"
       to="${gradleSettingsSrcTo}/settings.gradle" />
